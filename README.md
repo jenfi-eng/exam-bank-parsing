@@ -4,6 +4,8 @@ Welcome to Jenfi's bank parsing test!
 
 The goal is to expose you to actual processes and code of a key aspect of our company in less than 4 hours.
 
+**PLEASE** DON'T FORGET TO ANSWER THE QUESTIONS BELOW
+
 ## Goal
 
 Make the test pass by modifying `BankParser#account_info`.
@@ -39,6 +41,11 @@ The test simply compares the output of `BankParser#parse` to what is stored in t
 1. Ensure `ruby -v` is `~3.1`
 1. `bundle install`
 1. `bundle exec rspec .`
+
+## Questions to Answer
+
+1. From your solution, what do you believe could be improved in your code AND Jenfi's?
+1. How do you ensure data integrity or how do you keep 'dirty data' out of the system?
 
 ## Helpful Info
 
