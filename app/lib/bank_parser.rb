@@ -12,8 +12,8 @@ class BankParser
     output[:account_info_raw] = account_info(noko)
 
     # Other parsing - see ExtractorHelpers
-    output[:dates_covered] = doc_dates(noko)
-    output[:transaction_rows_raw] = transaction_rows(nil, noko)
+    # output[:dates_covered] = doc_dates(noko)
+    # output[:transaction_rows_raw] = transaction_rows(nil, noko)
 
     [output]
   end

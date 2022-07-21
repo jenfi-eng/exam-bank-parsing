@@ -26,4 +26,24 @@ RSpec.describe BankParser, type: :lib do
       expect(subject).to eq(stored_result)
     end
   end
+
+  context 'Banking Data 3' do
+    let(:raw_xml) { File.read(Rails.root.join(fixture_folder, "banking_data_3.xml")) }
+    let(:output_file) { Rails.root.join(fixture_folder, 'banking_data_3_result.yml') }
+    
+    it do
+      stored_result = YAML.unsafe_load(File.read(output_file))
+      expect(subject).to eq(stored_result)
+    end
+  end
+
+  context 'Banking Data 4' do
+    let(:raw_xml) { File.read(Rails.root.join(fixture_folder, "banking_data_4.xml")) }
+    let(:output_file) { Rails.root.join(fixture_folder, 'banking_data_4_result.yml') }
+    
+    it do
+      stored_result = YAML.unsafe_load(File.read(output_file))
+      expect(subject).to eq(stored_result)
+    end
+  end
 end
